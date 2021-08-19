@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Storm</title>
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/jquery.pagePiling.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="/assets/js/pagePiling.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#pagepiling').pagepiling({
+                menu: '#nav',
+                direction: 'vertical',
+                verticalCentered: false,
+                sectionsColor: [],
+                anchors: [],
+                scrollingSpeed: 700,
+                easing: 'swing',
+                loopBottom: true,
+                loopTop: true,
+                css3: true,
+                navigation: {
+                    'textColor': '#fff',
+                    'bulletsColor': '#fff',
+                    'position': 'left',
+                    'tooltips': ['Home', 'About Me', 'Projects', 'CV', 'Contact Me', 'Portfolio']
+                },
+                normalScrollElements: null,
+                normalScrollElementTouchThreshold: 5,
+                touchSensitivity: 5,
+                keyboardScrolling: true,
+                sectionSelector: '.section',
+                animateAnchor: false,
+                sectionsColor: ['#000', '#000', '#000', '#000', '#000', ],
+
+                //events
+                onLeave: function(index, nextIndex, direction) {},
+                afterLoad: function(anchorLink, index) {},
+                afterRender: function() {},
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="pagepiling">
+        <div class="section" id="home">
+            <div class="title">
+                <div class="padding40"></div>
+                <h3>Storm.</h3>
+                <h4 class="txt-lite">Developer, Student, Radio DJ</h4>
+                <div class="links">
+                    <a target="_none" href="http://dsc.bio/stormforcejj"><i class="fab fa-discord"></i></a>
+                    <a target="_none" href="https://github.com/stormforcejj"><i class="fab fa-github"></i></a>
+                    <a target="_none" href="http://upbeatradio.net/"><i class="fas fa-microphone"></i></a>
+                    <a target="_none" href="https://www.youtube.com/channel/UCUE868tSJ8v9PzqKEuovKfA"><i
+                            class="fab fa-youtube"></i></a>
+                    <a target="_none" href="https://open.spotify.com/user/jwcrgr6ig95alm0os9tuc9tq1?si=bf902ec6187f450e"><i
+                            class="fab fa-spotify"></i></a>
+                </div>
+                <button onClick="$.fn.pagepiling.moveSectionDown();"><i class="fas fa-angle-down"></i></button>
+                <div class="padding15"></div>
+            </div>
+        </div>
+
+        <div class="section" id="about">
+            <div class="title">
+                <h2 id="info" class="txt-lite">Hey.</h2>
+                <p>I'm Storm! I'm an aspiring developer, student, journalist and radio presenter! I work at UpBeatRadio.net as a Media Manager! I code in HTML, CSS, JS and Python!</p>
+                <!-- <div class="spotifybox" style="overflow-x: hidden">
+                <i class="fab fa-spotify" style="font-size:3rem; padding-left: 5px; padding-top: 15px; position: fixed;"></i>
+                <div style="padding-left: 60px; padding-bottom: 10px; position: fixed;" class="spotifypad">
+                    <span id="spotify-s"></span>
+                    <br>
+                    <span id="spotify-a"></span>
+                </div>
+            </div> -->
+            </div>
+        </div>
+        <div class="section" id="projects">
+            <div class="title">
+                <h2 id="info" class="txt-lite">Projects.</h2>
+                <div class="row">
+                    <div class="card col-md-6 col-sm-6">
+                        <h6>UpBeat Trucking</h6>
+                        <p class="txt-lite">UpBeat Trucking is an established virtual trucking company fulfilled with members who are part of the UpBeat community. I am a Managing Director and help to develop their Discord bot and Trucking Management Panel.</p>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <h6>Coming Soon</h6>
+                        <p class="txt-lite">New Stuff is Always Coming Soon! Be sure to check back regularly!</p>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card col-6"><button class="btn btn-primary"><i class="fab fa-discord"></i> Join the
+                            Discord</button>
+                    </div>
+                    <div class="card col-6"><button class="btn btn-primary disabled"><i class="fas fa-hammer"></i> Coming Soon
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="CV">
+            <div class="title">
+                <h2 id="info" class="txt-lite">Hey.</h2>
+                <p></p>
+
+            </div>
+        </div>
+        <div class="section" id="Contact">
+            <div class="title">
+                <h2 class="txt-lite">Contact Me.</h2>
+                <p>no go away im an intorvert</p>
+            </div>
+        </div>
+
+</body>
+
+
+<script src="./assets/js/stats.js"></script>
+<script src="./assets/js/light.js"></script>
+
+</html>

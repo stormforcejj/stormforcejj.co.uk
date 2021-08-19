@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #ffffff;
+}
+
+.light-mode {
+    background-color: white;
+    color: #000;
+}
+
+.title {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.txt-lite {
+    font-weight: 200;
+}
+
+.links a {
+    color: #494949;
+    transition: 0.5s;
+}
+
+.links a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.links {
+    padding-top: 5px;
+}
+
+.padding15 {
+    padding-top: 15px;
+}
+
+.padding150 {
+    padding-top: 150px;
+}
+
+.paddding40 {
+    padding-top: 40;
+}
+
+.imgMidContained {
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 200px;
+    height: 200px;
+}
+
+.imgMid {
+    width: 200px;
+    border-radius: 100%;
+    --webkit-user-drag: none;
+}
+
+.info {
+    text-align: left;
+    position: relative;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.spotifybox {
+    float: left;
+    width: 350px;
+    border-radius: 15px;
+    height: 75px;
+    background-color: #1ed760;
+    box-shadow: 0px 0px 10px rgba(147, 221, 137, 0.555);
+}
+
+.spotifypad {
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.spotifybox a {
+    text-decoration: none;
+    color: #eee;
+    font-weight: 300;
+}
+
+button {
+    background-color: #000;
+    border: 0;
+    color: #fff;
+}
