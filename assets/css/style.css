@@ -31,6 +31,8 @@ body {
 .links a {
     color: #494949;
     transition: 0.5s;
+    padding-right: 1px;
+    padding-left: 1px;
 }
 
 .links a:hover {
@@ -52,6 +54,12 @@ body {
 
 .paddding40 {
     padding-top: 40;
+}
+
+.centre {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
 }
 
 .imgMidContained {
@@ -101,4 +109,13 @@ button {
     background-color: #000;
     border: 0;
     color: #fff;
+}
+
+.linkee {
+    color: rgb(153, 153, 153);
+}
+
+.linkee:hover {
+    color: #fff;
+    transition: 0.5s;
 }

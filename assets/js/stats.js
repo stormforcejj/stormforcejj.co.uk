@@ -17,6 +17,6 @@ function credits() {
 //     })
 // }
 
-upStats()
+// upStats()
 
-setInterval(upStats, credits, 20000)
+setInterval(credits, 20000)
