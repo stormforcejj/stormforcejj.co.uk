@@ -31,6 +31,6 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd /var/www/stormforcejj 
-            git pull 
+            git pull origin master
             systemctl restart nginx.service
 
