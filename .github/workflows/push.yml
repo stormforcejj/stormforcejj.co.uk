@@ -1,0 +1,36 @@
+name: HTML - CSS - JS CI/CD
+
+on: [push] # tells github to run this on any push to the repository
+
+jobs:
+  test: # names the job
+    runs-on: ubuntu-latest # sets the version of linux we want to use, should be what you have on your server
+
+    strategy:
+      fail-fast: false # tells github to not run further steps if this one fails
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+        with:
+          # Full git history is needed to get a proper list of changed files within `super-linter`
+          fetch-depth: 0
+          
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test # this job depends on "test" having finished
+    if: github.ref == 'refs/heads/master' # we tell Github to only execute this step if we're on our master branch (so we don't put unfinished branches in production)
+    
+    steps:
+      - name: Deploying to stormforcejj_uk1
+        uses: appleboy/ssh-action@v0.1.4 # An action made to control Linux servers
+        with: # We set all our secrets here for the action, these won't be shown in the action logs
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          port: ${{ secrets.PORT }}
+          script: |
+            cd /var/www/stormforcejj 
+            git pull origin master
+            systemctl restart nginx.service
+
