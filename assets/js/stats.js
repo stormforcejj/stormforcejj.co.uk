@@ -4,19 +4,41 @@ function credits() {
     console.log("--------------------------------------------------------------------------------------------------------------------")
 }
 
-// function upStats() {
-//     $.getJSON("https://api.lanyard.rest/v1/users/399940580932714496", (data) => {
-//         data = data.data;
-//         if (data.listening_to_spotify) {
-//             $("#spotify-s").html(`<b>${data.spotify.song}</b> `)
-//             $("#spotify-a").html(`By <i>${data.spotify.artist}</i>`)
-//         } else {
-//             $("#spotify-s").html(`Not listening to anything.`)
-//             $("#spotify-a").html(``)
-//         }
-//     })
-// }
+function upStats() {
+    $.getJSON("https://api.lanyard.rest/v1/users/399940580932714496", (data) => {
+        data = data.data;
+        if (data.listening_to_spotify) {
+            $("#listeningTo").html(` <b>${data.spotify.song}</b> By <i>${data.spotify.artist}</i>`)
+        } else {
+            $("#spotify").hide()
+        }
+    })
+}
 
-// upStats()
+function pctime() {
+    var dt = new Date();
+    var secondsNew = dt.getSeconds()
+    var minutesNew = dt.getMinutes()
+    var hoursNew = dt.getHours()
 
-setInterval(credits, 20000)
+    if (dt.getSeconds() < 10) {
+        secondsNew = "0" + dt.getSeconds();
+    }
+
+    if (dt.getMinutes() < 10) {
+        minutesNew = "0" + dt.getMinutes();
+    }
+
+    if (dt.getHours() < 10) {
+        hoursNew = "0" + dt.getHours();
+    }
+
+    var time = hoursNew + ":" + minutesNew + ":" + secondsNew;
+    $("#pctime").html(time)
+}
+
+credits()
+upStats()
+setInterval(credits, 200000)
+setInterval(upStats, 20000)
+setInterval(pctime, 1000)
