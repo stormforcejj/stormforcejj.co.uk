@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
-
-:root {
-  --primary: #000000;
-  --secondary: #ffffff;
-  --link1: #494949;
-  --link2: rgb(153, 153, 153);
-}
-
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     margin: 0;
     padding: 0;
-    background-color: var(--primary);
-    color: var(--secondary);
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #ffffff;
+}
+
+.light-mode {
+    background-color: white;
+    color: #000;
 }
 
 .title {
@@ -29,14 +29,14 @@ body {
 }
 
 .links a {
-    color: var(--link1);
+    color: #494949;
     transition: 0.5s;
     padding-right: 1px;
     padding-left: 1px;
 }
 
 .links a:hover {
-    color: var(--secondary);
+    color: #fff;
     text-decoration: none;
 }
 
@@ -85,17 +85,37 @@ p {
     font-weight: 500;
 }
 
+.spotifybox {
+    float: left;
+    width: 350px;
+    border-radius: 15px;
+    height: 75px;
+    background-color: #1ed760;
+    box-shadow: 0px 0px 10px rgba(147, 221, 137, 0.555);
+}
+
+.spotifypad {
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.spotifybox a {
+    text-decoration: none;
+    color: #eee;
+    font-weight: 300;
+}
+
 button {
-    background-color: var(--primary);
+    background-color: #000;
     border: 0;
     color: #fff;
 }
 
 .linkee {
-    color: var(--link2);
+    color: rgb(153, 153, 153);
 }
 
 .linkee:hover {
-    color: var(--secondary);
+    color: #fff;
     transition: 0.5s;
 }

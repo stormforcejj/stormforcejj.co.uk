@@ -1,14 +1,11 @@
-function lightMode() {
-    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+var color = 0;
 
-    if (prefersDarkScheme.matches) {
-        document.body.classList.add("dark-mode");
-        document.body.classList.remove("light-mode");
-    } else {
-        document.body.classList.remove("dark-mode");
-        document.body.classList.add("light-mode");
-
+function lightDark() {
+    if (color == 0) {
+        $('link[href="style.css"]').attr('href', 'style-light.css');
+        var color = color + 1;
     }
-}
 
-lightMode()
+    elif(color == 1)
+
+}
