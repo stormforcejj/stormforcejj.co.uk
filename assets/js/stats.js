@@ -7,33 +7,36 @@ function credits() {
 function upStats() {
     $.getJSON("https://api.lanyard.rest/v1/users/399940580932714496", (data) => {
         data = data.data;
+
         if (data.listening_to_spotify) {
+            $("#spotify-np").css("color", "white");
             $("#listeningTo").html(` <b>${data.spotify.song}</b> By <i>${data.spotify.artist}</i>`)
         } else {
-            $("#spotify").hide()
+            $("#spotify-np").fadeOut();
+            $("#spotify-np").css("color", "black");
         }
     })
 }
 
 function pctime() {
     var dt = new Date();
-    var secondsNew = dt.getSeconds()
-    var minutesNew = dt.getMinutes()
-    var hoursNew = dt.getHours()
+    var s = dt.getUTCSeconds()
+    var m = dt.getUTCMinutes()
+    var h = dt.getUTCHours()
 
-    if (dt.getSeconds() < 10) {
-        secondsNew = "0" + dt.getSeconds();
+    if (dt.getUTCSeconds() < 10) {
+        s = "0" + dt.getUTCSeconds();
     }
 
-    if (dt.getMinutes() < 10) {
-        minutesNew = "0" + dt.getMinutes();
+    if (dt.getUTCMinutes() < 10) {
+        m = "0" + dt.getUTCMinutes();
     }
 
-    if (dt.getHours() < 10) {
-        hoursNew = "0" + dt.getHours();
+    if (dt.getUTCHours() < 10) {
+        h = "0" + dt.getUTCHours();
     }
 
-    var time = hoursNew + ":" + minutesNew + ":" + secondsNew;
+    var time = h + ":" + m + ":" + s;
     $("#pctime").html(time)
 }
 

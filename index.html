@@ -8,10 +8,12 @@
     <title>Storm</title>
     <link rel="icon" type="image/svg" href="/assets/favicon.svg">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
 
-    <link rel="script" href="/assets/js/light.js">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <link rel="stylesheet" type="text/css" href="/assets/css/jquery.pagePiling.css" />
 
@@ -56,12 +58,12 @@
 </head>
 
 <body>
-    <span id="spotify" class="d-none d-md-block" style="position: fixed; top:100; padding: 10px; z-index: 100;"><i
+    <span id="spotify-np" class="d-none d-md-block" style="position: fixed; top:100; padding: 10px; z-index: 100;"><i
             class="fab fa-spotify"></i><span
-            id="listeningTo"> </span><span style="position: fixed; left: 100; padding-right: 10px; right:0;"><span
-                    id="pctime"></span> <i class="fas fa-clock"></i></span>
+            id="listeningTo"> </span>
     </span>
-
+    <span class="d-none d-md-block" data-toggle="tooltip" data-placement="bottom" title="UTC" style="position: fixed; left: 100; padding: 10px; right:0; z-index: 100;"><span
+            id="pctime"></span> <i class="fa-regular fa-clock"></i></span>
     <div id="pagepiling">
         <div class="section" id="home">
             <div class="title">
