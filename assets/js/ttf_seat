@@ -1,0 +1,41 @@
+server {
+
+    listen 80;
+    listen [::]:80;
+
+    # If you are hosting this instance on a domain, set that
+    # name here.
+    server_name  seat.stormforcejj.co.uk;
+
+    # SeAT public directory. This is the only directory that
+    # should be exposed by the webserver. If one has to expose
+    # the parent directory then things like the .env file will
+    # be available for anyone to download.
+    root /var/www/tyromancy_task_force/seat/public;
+
+    index index.php;
+
+    location / {
+       try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    # PHP-FPM configuration.
+    location ~ \.php$ {
+       try_files $uri /index.php =404;
+       fastcgi_pass unix:/run/php/php7.3-fpm.sock;
+       fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+       include fastcgi_params;
+    }
+
+    # Even though .htaccess rules mean nothing in the nginx
+    # world, prevent those from being downloaded anyways.
+    location ~ /\.ht {
+       deny all;
+    }
+
+    # In case someone messes up, prevent .env files from
+    # being downloaded as well.
+    location ~ /\.env {
+       deny all;
+    }
+}
