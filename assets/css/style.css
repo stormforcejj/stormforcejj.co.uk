@@ -23,6 +23,7 @@ body {
     background-color: var(--primary);
     color: var(--secondary);
     transition: color 1s;
+    display: none;
 }
 
 .section {
