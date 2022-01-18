@@ -7,14 +7,6 @@
   --link2: rgb(153, 153, 153);
 }
 
-[data-theme="light"] {
-  --primary: #fff;
-  --secondary: #000;
-  --link2: #494949;
-  --link1: rgb(153, 153, 153);
-}
-
-
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -22,40 +14,6 @@ body {
     padding: 0;
     background-color: var(--primary);
     color: var(--secondary);
-    transition: color 1s;
-}
-
-.section {
-    transition: background-color 1s;
-    background-color: var(--primary);
-}
-
-#pp-nav .pp-tooltip{
-	color: var(--secondary);
-    transition: color 1s;
-}
-
-#pp-nav .li {
-    color: var(--secondary);
-    border-color: var(--secondary);
-    transition: color 1s;
-    transition: border-color 1s;
-}
-
-#pp-nav span, .pp-slidesNav  {
-    border-color: var(--secondary) !important;
-    transition: border-color 1s;
-}
-
-#pp-nav a.active span, .pp-slidesNav  {
-    color: var(--secondary) !important;
-    transition: color 1s;
-}
-
-#pp-nav li .active span, .pp-slidesNav .active span {
-  background: var(--secondary) !important;
-transition: background 1s;
-
 }
 
 .title {
@@ -128,9 +86,9 @@ p {
 }
 
 button {
+    background-color: var(--primary);
     border: 0;
-    color: var(--secondary);
-    transition: color 1s;
+    color: #fff;
 }
 
 .linkee {
@@ -140,80 +98,4 @@ button {
 .linkee:hover {
     color: var(--secondary);
     transition: 0.5s;
-}
-
-.spotify_np {
-    color: var(--secondary) !important;
-    transition: color 1s;
-}
-
-button {
-    color: var(--secondary) !important;
-    background-color: var(--primary) !important;
-    transition: color 1s;
-    transition: background-color 1s;
-}
-
-.btn:disabled,
-.btn.disabled,
-fieldset:disabled .btn {
-    pointer-events: none;
-    opacity: 0.65;
-}
-
-.btn-primary {
-    color: var(--secondary) !important;
-    background-color: var(--primary) !important;
-    border-color: var(--secondary) !important;
-    transition: color 1s;
-    transition: background-color 1s;
-    transition: border-color 1s;
-}
-
-.btn-primary:hover {
-    color: var(--primary) !important;
-    background-color: var(--secondary) !important;
-    border-color: var(--secondary) !important;
-}
-
-.card {
-    background-color: var(--primary) !important;
-    border-color: var(--primary) !important;
-    transition: background-color 1s;
-    transition: border-color 1s;
-}
-
-.sun, .moon {
-    font-size: 2rem;
-    width: fit-content;
-    height: fit-content;
-}
-
-.moon {
-    position: absolute;
-    inset: 0;
-}
-
-.moon-logo{
-    opacity: 0;
-    transform: rotateZ(50deg);
-    transition: all 1s ease-out;
-}
-
-.sun-logo{
-    opacity: 1;
-    transform: rotateZ(0deg);
-    transition: all 1s ease-out;
-}
-
-.animate-sun{
-    opacity: 0;
-    transform: rotateZ(100deg);
-    color: var(--secondary) !important;
-}
-
-.animate-moon{
-    opacity: 1;
-    transform: translateY(0%) rotateZ(0deg);
-    color: var(--secondary) !important;
 }
