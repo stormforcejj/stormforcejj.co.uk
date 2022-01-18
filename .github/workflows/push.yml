@@ -48,4 +48,21 @@ jobs:
             cd /var/www/stormforcejj 
             git pull origin master
             systemctl restart nginx.service
+            
+      
+  purge-cache:
+    runs-on: ubuntu-latest
+    needs: deploy # this job depends on "test" having finished
+    if: github.ref == 'refs/heads/master' # we tell Github to only execute this step if we're on our master branch (so we don't put unfinished branches in production)
+    steps:
+
+  # Put steps here to build your site, deploy it to a service, etc.
+
+    - name: Purge cache
+      uses: jakejarvis/cloudflare-purge-action@master
+      env:
+        # Zone is required by both authentication methods
+        CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
+
+        CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
 
