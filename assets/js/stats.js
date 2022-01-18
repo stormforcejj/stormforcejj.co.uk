@@ -1,6 +1,7 @@
 function credits() {
     console.log("🛑 Hey! This site was developed by itspolar.dev and stormforcejj.co.uk for stormforcejj.co.uk only.")
     console.log("⚖️ Stealing this code and using it for personal or commercial use is against the law and is strictly prohibited.")
+    console.log("📂 © stormforcejj.co.uk & itspolar.dev  •  2022")
     console.log("--------------------------------------------------------------------------------------------------------------------")
 }
 
