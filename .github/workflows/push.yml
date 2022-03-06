@@ -46,7 +46,7 @@ jobs:
           port: ${{ secrets.PORT }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            cd /var/www/stormforcejj 
+            cd /var/www/stormforcejj.co.uk 
             git pull origin master
             systemctl restart nginx.service
             
