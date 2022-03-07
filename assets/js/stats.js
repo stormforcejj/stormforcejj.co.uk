@@ -3,6 +3,8 @@ function credits() {
     console.log("⚖️ Stealing this code and using it for personal or commercial use is against the law and is strictly prohibited.")
     console.log("📂 © stormforcejj.co.uk & itspolar.dev  •  2022")
     console.log("--------------------------------------------------------------------------------------------------------------------")
+    console.log("🇺🇦 Slava Ukraini 🇺🇦")
+    console.log("--------------------------------------------------------------------------------------------------------------------")
 }
 
 function upStats() {
