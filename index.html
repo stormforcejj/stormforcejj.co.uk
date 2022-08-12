@@ -8,7 +8,7 @@
     <title>Storm</title>
     <link rel="icon" type="image/svg" href="/assets/favicon.svg">
     <!-- Font Awesome ----------------------------------------------------------------------------------- -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
     <!-- ------------------------------------------------------------------------------------------------ -->
 
     <!-- Jquery ----------------------------------------------------------------------------------------- -->
@@ -34,11 +34,14 @@
 
 <body>
     <span id="spotify-np" class="d-none d-md-block spotify_np" style="position: fixed; top:100; padding: 10px; z-index: 100;"><i
-            class="fab fa-spotify"></i><span
+            class="fab fa-spotify spotify-icon"></i><span
             id="listeningTo"> </span>
     </span>
-    <span class="d-none d-md-block" data-toggle="tooltip" data-placement="bottom" title="UTC" style="position: fixed; left: 100; padding: 10px; right:0; z-index: 100;"><span
-            id="pctime"></span> <i class="fa-regular fa-clock"></i></span>
+    <!-- <span class="d-none d-md-block" data-toggle="tooltip" data-placement="bottom" title="UTC" style="position: fixed; left: 100; padding: 10px; right:0; z-index: 100;"><span
+            id="pctime"></span> <i class="fa-regular fa-clock"></i></span> -->
+
+    <span class="d-none d-md-block" style="position: fixed; left: 100; padding: 10px; right:0; z-index: 100;"><i
+            class="fas" id="activeIcon"></i></span>
 
     <div class="lightdark" style="position: fixed; bottom:0; padding: 25px; z-index: 100;">
         <div class="sun sun-logo">
@@ -55,14 +58,14 @@
             <div class="title">
                 <div class="padding40"></div>
                 <h3>Storm.</h3>
-                <h4 class="txt-lite">Developer, Student, Radio DJ</h4>
+                <h4 class="txt-lite">Developer, Student, Violinist</h4>
                 <div class="links">
                     <a rel="noopener" aria-label="Discord" target="_none" href="http://dsc.bio/stormforcejj"><i
                             class="fab fa-discord"></i></a>
                     <a rel="noopener" aria-label="Github" target=" _none" href="https://github.com/stormforcejj"><i
                             class="fab fa-github"></i></a>
-                    <a rel="noopener" aria-label="UpBeat" target=" _none" href="http://upbeatradio.net/"><i
-                            class="fas fa-microphone"></i></a>
+                    <a rel="noopener" aria-label="Reddit" target=" _none" href="https://reddit.com/stormforcejj"><i
+                            class="fab fa-reddit"></i></a>
                     <a rel="noopener" aria-label="Instagram" target=" _none" href="http://instagram.com/stormforcejj"><i
                             class="fab fa-instagram"></i></a>
                     <a rel="noopener" aria-label="Spotify" target=" _none" href="https://open.spotify.com/user/jwcrgr6ig95alm0os9tuc9tq1?si=bf902ec6187f450e"><i
@@ -76,7 +79,7 @@
         <div class="section" id="about">
             <div class="title">
                 <h2 id="info" class="txt-lite">Hey.</h2>
-                <p>I'm Storm! I'm an aspiring developer, student, journalist and radio presenter! I work at UpBeatRadio.net as a Media Manager! I code in HTML, CSS, JS and Python!</p>
+                <p>I'm Storm! I'm an aspiring developer, student and journalist. I also love to play the violin! I code in HTML, CSS, JS and Python!</p>
             </div>
         </div>
 
@@ -104,10 +107,10 @@
                 <h2 class="txt-lite">Contact Me.</h2>
                 <p>My Primary Method of Contact is Discord, you can contact me at <a class="linkee" target="_blank" href="https://discordapp.com/users/399940580932714496">stormforcejj#4036</a>! Other contact methods are listed below for convinience!</p>
                 <div class="links">
-                    <a target="_none" href="http://dsc.bio/stormforcejj"><i class="fab fa-discord"></i></a>
+                    <a target="_none" href="https://dsc.bio/stormforcejj"><i class="fab fa-discord"></i></a>
                     <a target="_none" href="https://github.com/stormforcejj"><i class="fab fa-github"></i></a>
-                    <a target="_none" href="http://upbeatradio.net/"><i class="fas fa-microphone"></i></a>
-                    <a target="_none" href="http://instagram.com/stormforcejj"><i
+                    <a target="_none" href="https://reddit.com/stormforcejj"><i class="fab fa-reddit"></i></a>
+                    <a target="_none" href="https://instagram.com/stormforcejj"><i
                             class="fab fa-instagram"></i></a>
                     <a target="_none" href="https://open.spotify.com/user/jwcrgr6ig95alm0os9tuc9tq1?si=bf902ec6187f450e"><i
                             class="fab fa-spotify"></i></a>
@@ -122,7 +125,6 @@
         </div>
     </div>
 </body>
-<!-- 🏳️‍⚧️ Trans Rights are Human Rights 🏳️‍⚧️ -->
 <!-- Custom JS -------------------------------------------------------------------------------------- -->
 <script src="/assets/js/initPage.js"></script>
 <script src="/assets/js/stats.js"></script>
