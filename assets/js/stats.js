@@ -3,6 +3,8 @@ function credits() {
     console.log("⚖️ Stealing this code and using it for personal or commercial use is against the law and is strictly prohibited.")
     console.log("📂 © stormforcejj.co.uk  •  2022")
     console.log("--------------------------------------------------------------------------------------------------------------------")
+    console.log("🇺🇦 Slava Ukraini 🇺🇦")
+    console.log("--------------------------------------------------------------------------------------------------------------------")
 }
 
 function upStats() {
@@ -80,4 +82,5 @@ isActive()
 setInterval(credits, 200000)
 setInterval(upStats, 20000)
 setInterval(isActive, 20000)
-    // setInterval(pctime, 1000)
+// setInterval(pctime, 1000)
+
