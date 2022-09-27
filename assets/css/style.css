@@ -5,6 +5,7 @@
   --secondary: #ffffff;
   --link1: #494949;
   --link2: rgb(153, 153, 153);
+  --modalbg: #050505;
 }
 
 [data-theme="light"] {
@@ -12,6 +13,7 @@
   --secondary: #000;
   --link2: #494949;
   --link1: rgb(153, 153, 153);
+  --modalbg: rgb(185, 185, 185);
 }
 
 
@@ -217,4 +219,27 @@ fieldset:disabled .btn {
     opacity: 1;
     transform: translateY(0%) rotateZ(0deg);
     color: var(--secondary) !important;
+}
+
+.spotify-modal {
+    width: 600px;
+    height: 300px;
+    background: var(--modalbg);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 10;
+    margin: -150px 0 0 -300px;
+    border-radius: 25px;
+    opacity: 0;
+}
+
+.active {
+    opacity: 1;
+    transition: opacity 1s; 
+}
+
+.transition-opacity {
+    opacity: 0;
+    transition: opacity 1s;
 }

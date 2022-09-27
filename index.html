@@ -33,10 +33,12 @@
 </head>
 
 <body>
-    <span id="spotify-np" class="d-none d-md-block spotify_np" style="position: fixed; top:100; padding: 10px; z-index: 100;"><i
-            class="fab fa-spotify spotify-icon"></i><span
-            id="listeningTo"> </span>
+
+    <span id="spotify-np" class="d-none d-md-block spotify_np" style="position: fixed; top:100; padding: 10px; z-index: 100;"><a id="spotifyModalTrigger" class="m-none"
+            onClick="showModal();" style="color: white; text-decoration: none;"><i
+                class="fab fa-spotify spotify-icon"></i><span id="listeningTo"> </span></a>
     </span>
+
     <!-- <span class="d-none d-md-block" data-toggle="tooltip" data-placement="bottom" title="UTC" style="position: fixed; left: 100; padding: 10px; right:0; z-index: 100;"><span
             id="pctime"></span> <i class="fa-regular fa-clock"></i></span> -->
 
@@ -51,7 +53,24 @@
             <i class="fas fa-moon"></i>
         </div>
     </div>
-
+    <div class="spotify-modal p-5 d-none d-md-block">
+        <h2><span id="spotifyName"></span></h2>
+        <div class="row">
+            <div class="col-md-4 mt-1 spotify-image">
+                <img class="" id="spotifyCover" style="height:151px; border-radius: 15px;" src="">
+            </div>
+            <div class="card col-md-7 m-1 p-2" style="background: #050505 !important;">
+                <!-- <p><b>Name - </b><span id="spotifyName"></span></p> -->
+                <p><b>Artist - </b><i><span id="spotifyArtist"></span></i></p>
+                <p><b>Album - </b><i><span id="spotifyAlbum"></span></i></p>
+                <a id="spotifyListenButton" target="_none" href="">
+                    <button class="btn btn-primary" style="width: 100%;">
+                        <i class="fab fa-spotify"></i> Listen
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
     <div id="pagepiling">
 
         <div class="section" id="home">
@@ -71,7 +90,8 @@
                     <a rel="noopener" aria-label="Spotify" target=" _none" href="https://open.spotify.com/user/jwcrgr6ig95alm0os9tuc9tq1?si=bf902ec6187f450e"><i
                             class="fab fa-spotify"></i></a>
                 </div>
-                <button aria-label="Jump Down" onClick="$.fn.pagepiling.moveSectionDown();"><i class="fas fa-angle-down"></i></button>
+                <button aria-label="Jump Down" onClick="$.fn.pagepiling.moveSectionDown();"><i
+                        class="fas fa-angle-down"></i></button>
                 <div class="padding15"></div>
             </div>
         </div>
@@ -110,8 +130,7 @@
                     <a target="_none" href="https://dsc.bio/stormforcejj"><i class="fab fa-discord"></i></a>
                     <a target="_none" href="https://github.com/stormforcejj"><i class="fab fa-github"></i></a>
                     <a target="_none" href="https://reddit.com/stormforcejj"><i class="fab fa-reddit"></i></a>
-                    <a target="_none" href="https://instagram.com/stormforcejj"><i
-                            class="fab fa-instagram"></i></a>
+                    <a target="_none" href="https://instagram.com/stormforcejj"><i class="fab fa-instagram"></i></a>
                     <a target="_none" href="https://open.spotify.com/user/jwcrgr6ig95alm0os9tuc9tq1?si=bf902ec6187f450e"><i
                             class="fab fa-spotify"></i></a>
                 </div>
@@ -129,6 +148,7 @@
 <script src="/assets/js/initPage.js"></script>
 <script src="/assets/js/stats.js"></script>
 <script src="/assets/js/light.js"></script>
+<script src="/assets/js/spotifyModal.js"></script>
 <!-- ------------------------------------------------------------------------------------------------ -->
 
 </html>
