@@ -1,8 +1,7 @@
 import Link from "next/link";
 import React, {useState} from "react";
-// import SpotifyNP from '@/components/SpotifyNP';
+import SpotifyNavbar from '@/components/SpotifyNavbar';
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
-import { Spotify } from '@icons-pack/react-simple-icons';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -20,9 +19,10 @@ const Navbar = () => {
                 </ul>
 
                 {/* <SpotifyNP /> */}
-                 <div className="hidden ml-auto lg:align-center lg:flex xl:inline">
+                 {/* <div className="hidden ml-auto lg:align-center lg:flex xl:inline">
                     <span className="py-1 text-neutral-500">Not Playing Anything </span><Spotify className="inline-flex align-center" color='#1DB954' size={20} />
-                </div>
+                </div> */}
+                <SpotifyNavbar client_id={undefined} client_secret={undefined} refresh_token={undefined} />
 
                 {/* Mobile Buttons*/}
                 <div className="fixed z-10 sm:hidden display-block left-3 top-3" onClick={handleNav}>
