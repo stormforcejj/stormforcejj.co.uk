@@ -29,36 +29,36 @@ export default function Index() {
             <p className='text-lg'>Currently I'm having lots of fun learning Java for schoolwork. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus harum id repudiandae illo ex unde, assumenda iure officiis rerum iste, velit minus. Eaque eos placeat porro maiores quisquam labore dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus harum id repudiandae illo ex unde, assumenda iure officiis rerum iste, velit minus. Eaque eos placeat porro maiores quisquam labore dolores?</p>
             <h2 className='text-[35px] font-extrabold pt-5'>Experience</h2>
             <div className="mx-10 my-3">
-                <div className="grid inline grid-cols-2 gap-4 text-lg md:grid-cols-5">
-                    <div className='align-center'>
-                        <span><Nextdotjs className='inline-flex align-center' color='#fff' size={20}/> NextJS</span>
+                <div className="grid grid-cols-1 gap-4 text-lg sm:grid-cols-2 md:grid-cols-5">
+                    <div>
+                        <span><Nextdotjs className='inline-flex align-text-top' color='#fff' size={20}/> NextJS</span>
                     </div>
                     <div>
-                        <span><Nodedotjs className='inline-flex align-center' color='#fff' size={20}/> NodeJS</span>
+                        <span><Nodedotjs className='inline-flex align-text-top' color='#fff' size={20}/> NodeJS</span>
                     </div>
                     <div>
-                        <span><ReactJs className='inline-flex align-center' color='#fff' size={20}/> React</span>
+                        <span><ReactJs className='inline-flex align-text-top' color='#fff' size={20}/> React</span>
                     </div>
                     <div>
-                        <span><Javascript className='inline-flex align-center' color='#fff' size={20}/> JavaScript</span>
+                        <span><Javascript className='inline-flex align-text-top' color='#fff' size={20}/> JavaScript</span>
                     </div>
                     <div>
-                        <span><Tailwindcss className='inline-flex align-center' color='#fff' size={20}/> Tailwind</span>
+                        <span><Tailwindcss className='inline-flex align-text-top' color='#fff' size={20}/> Tailwind</span>
                     </div>
                     <div>
-                        <span><Html5 className='inline-flex align-center' color='#fff' size={20}/> HTML</span>
+                        <span><Html5 className='inline-flex align-text-top' color='#fff' size={20}/> HTML</span>
                     </div>
                     <div>
-                        <span><CssThree className='inline-flex align-center' color='#fff' size={20}/> CSS</span>
+                        <span><CssThree className='inline-flex align-text-top' color='#fff' size={20}/> CSS</span>
                     </div>
                     <div>
-                        <span><Python className='inline-flex align-center' color='#fff' size={20}/> Python</span>
+                        <span><Python className='inline-flex align-text-top' color='#fff' size={20}/> Python</span>
                     </div>
                     <div>
-                        <span><Git className='inline-flex align-center' color='#fff' size={20}/> Git</span>
+                        <span><Git className='inline-flex align-text-top' color='#fff' size={20}/> Git</span>
                     </div>
                     <div>
-                        <span><Visualstudiocode className='inline-flex align-center' color='#fff' size={20}/> VS Code</span>
+                        <span><Visualstudiocode className='inline-flex align-text-top' color='#fff' size={20}/> VS Code</span>
                     </div>
                 </div>
             </div>
