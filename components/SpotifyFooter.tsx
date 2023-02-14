@@ -3,7 +3,7 @@ import { Spotify } from '@icons-pack/react-simple-icons';
 import getNowPlayingItem from "../js/spotifyAPI";
 import Link from "next/link";
 
-const SpotifyNowPlaying = (props: { client_id: any; client_secret: any; refresh_token: any; }) => {
+const SpotifyNowPlayingFooter = (props: { client_id: any; client_secret: any; refresh_token: any; }) => {
     type Result = {
         albumImageUrl: string;
         artist: string;
@@ -31,15 +31,15 @@ const SpotifyNowPlaying = (props: { client_id: any; client_secret: any; refresh_
                 <div className="hidden ml-auto lg:align-center lg:flex xl:inline">
                     <span className="py-1 text-neutral-500">
                             <span><Link href={result.songUrl}>{result.title} by {result.artist} </Link> </span>
-                            <Spotify className="inline-flex align-center" color='#1DB954' size={20} />
                     </span>
+                    <Spotify className="inline-flex align-center" color='#1DB954' size={20} />
                 </div>
             ) : (
                     <div className="hidden ml-auto lg:align-center lg:flex xl:inline">
                         <span className="py-1 text-neutral-500">
                             <span>Not Playing Anything </span>
-                            <Spotify className="inline-flex align-center" color='#1DB954' size={20} />
                         </span>
+                        <Spotify className="inline-flex align-center" color='#1DB954' size={20} />
                     </div>
             );
         }
@@ -47,11 +47,11 @@ const SpotifyNowPlaying = (props: { client_id: any; client_secret: any; refresh_
             <div className="hidden ml-auto lg:align-center lg:flex xl:inline">
                 <span className="py-1 text-neutral-500">
                     <span>Not Playing Anything </span>
-                    <Spotify className="inline-flex align-center" color='#1DB954' size={20} />
                 </span>
+                <Spotify className="inline-flex align-center" color='#1DB954' size={20} />
             </div>
         )
     
 }
 
-export default SpotifyNowPlaying;
+export default SpotifyNowPlayingFooter;

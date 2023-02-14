@@ -18,10 +18,6 @@ const Navbar = () => {
                     <li className="px-6 py-4 m-2 rounded-l-full rounded-r-full hover:bg-neutral-900 hover:bg-opacity-50"><Link href='/contact'>Contact</Link></li>
                 </ul>
 
-                {/* <SpotifyNP /> */}
-                 {/* <div className="hidden ml-auto lg:align-center lg:flex xl:inline">
-                    <span className="py-1 text-neutral-500">Not Playing Anything </span><Spotify className="inline-flex align-center" color='#1DB954' size={20} />
-                </div> */}
                 <SpotifyNavbar client_id={undefined} client_secret={undefined} refresh_token={undefined} />
 
                 {/* Mobile Buttons*/}

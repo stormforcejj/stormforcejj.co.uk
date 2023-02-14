@@ -29,8 +29,8 @@ export default function Index() {
             <p className='text-lg'>Currently I'm having lots of fun learning Java for schoolwork. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus harum id repudiandae illo ex unde, assumenda iure officiis rerum iste, velit minus. Eaque eos placeat porro maiores quisquam labore dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus harum id repudiandae illo ex unde, assumenda iure officiis rerum iste, velit minus. Eaque eos placeat porro maiores quisquam labore dolores?</p>
             <h2 className='text-[35px] font-extrabold pt-5'>Experience</h2>
             <div className="mx-10 my-3">
-                <div className="grid grid-cols-2 gap-4 text-lg md:grid-cols-5">
-                    <div>
+                <div className="grid inline grid-cols-2 gap-4 text-lg md:grid-cols-5">
+                    <div className='align-center'>
                         <span><Nextdotjs className='inline-flex align-center' color='#fff' size={20}/> NextJS</span>
                     </div>
                     <div>
@@ -62,10 +62,15 @@ export default function Index() {
                     </div>
                 </div>
             </div>
-            <div className="my-7 text-neutral-600">
+            <div className="flex my-7 text-neutral-600">
                 <hr className='border-neutral-900' />
-                <h2 className='text-[35px] font-extrabold pt-5'>James</h2>
-                <p className='text-[20px]'>stormforcejj.co.uk • 2023</p>
+                <div className="">
+                    <h2 className='text-[35px] font-extrabold pt-5'>James</h2>
+                    <p className='text-[20px]'>stormforcejj.co.uk • 2023</p>
+                </div>
+                <div className="">
+                    
+                </div>
             </div>
             
 
