@@ -62,18 +62,13 @@ export default function Index() {
                     </div>
                 </div>
             </div>
-            <div className="flex my-7 text-neutral-600">
+            <div className="my-7 text-neutral-600">
                 <hr className='border-neutral-900' />
                 <div className="">
                     <h2 className='text-[35px] font-extrabold pt-5'>James</h2>
                     <p className='text-[20px]'>stormforcejj.co.uk • 2023</p>
                 </div>
-                <div className="">
-                    
-                </div>
             </div>
-            
-
         </section>
     </div>
     )
