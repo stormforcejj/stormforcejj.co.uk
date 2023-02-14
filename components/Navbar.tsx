@@ -9,7 +9,7 @@ const Navbar = () => {
         setNav(!nav);
     };
     return (
-        <div className="fixed top-0 left-0 z-10 w-full duration-300 ease-in">
+        <div className="fixed top-0 left-0 z-10 w-full duration-300 ease-in bg-black">
             <div className="flex items-center justify-between max-w-4xl p-4 m-auto">
                 <ul className="hidden font-bold sm:flex">
                     <li className="px-6 py-4 m-2 rounded-l-full rounded-r-full hover:bg-neutral-900 hover:bg-opacity-50"><Link href='/'>&gt;_</Link></li>

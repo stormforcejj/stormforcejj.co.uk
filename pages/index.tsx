@@ -8,7 +8,7 @@ export default function Index() {
     return (
     <div className="">
         <Head>
-            <title>• Storm</title>
+            <title>• James</title>
             <meta name="" content="" />
             <link rel="icon" href="/favicon.svg" />
         </Head>   
@@ -23,10 +23,10 @@ export default function Index() {
                     </li>
                 </ul>
             </div>
-            <h1 className='text-[50px] font-extrabold'>Hi, I'm Storm 👋</h1>
+            <h1 className='text-[50px] font-extrabold'>Hi, I'm James 👋</h1>
             <p className='text-lg'>I'm a 17 year old aspiring developer and student from Wales. I primarily deal with web technologies, such as NextJS or React, however I am always willing to give something new a try!</p>
             <h2 className='text-[35px] font-extrabold pt-5'>What am I doing at the moment?</h2>
-            <p className='text-lg'>Currently I'm having lots of fun learning Java for schoolwork</p>
+            <p className='text-lg'>Currently I'm having lots of fun learning Java for schoolwork. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus harum id repudiandae illo ex unde, assumenda iure officiis rerum iste, velit minus. Eaque eos placeat porro maiores quisquam labore dolores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus harum id repudiandae illo ex unde, assumenda iure officiis rerum iste, velit minus. Eaque eos placeat porro maiores quisquam labore dolores?</p>
             <h2 className='text-[35px] font-extrabold pt-5'>Experience</h2>
             <div className="mx-10 my-3">
                 <div className="grid grid-cols-2 gap-4 text-lg md:grid-cols-5">
@@ -64,7 +64,7 @@ export default function Index() {
             </div>
             <div className="my-7 text-neutral-600">
                 <hr className='border-neutral-900' />
-                <h2 className='text-[35px] font-extrabold pt-5'>Storm</h2>
+                <h2 className='text-[35px] font-extrabold pt-5'>James</h2>
                 <p className='text-[20px]'>stormforcejj.co.uk • 2023</p>
             </div>
             

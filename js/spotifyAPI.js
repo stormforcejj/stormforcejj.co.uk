@@ -7,7 +7,7 @@ const refresh_token = process.env.NEXT_PUBLIC_SPOTIFY_REFRESH_TOKEN;
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
 const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
 
-const getAccessToken = async (client_id, client_secret, refresh_token) => {
+const getAccessToken = async () => {
     const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64");
 
     const response = await fetch(TOKEN_ENDPOINT, {
@@ -41,7 +41,7 @@ export const getNowPlaying = async (client_id, client_secret, refresh_token) => 
 export default async function getNowPlayingItem(client_id, client_secret, refresh_token) {
    const response = await getNowPlaying(client_id, client_secret, refresh_token);
    if(response.status === 204 || response.status > 400) {
-    return false;
+    return;
    } 
 
    const song = await response.json();
