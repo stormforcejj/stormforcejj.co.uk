@@ -15,7 +15,7 @@ const Navbar = () => {
                     <li className="px-6 py-4 m-2 rounded-l-full rounded-r-full hover:bg-neutral-900 hover:bg-opacity-50"><Link href='/'>&gt;_</Link></li>
                     <li className="px-6 py-4 m-2 rounded-l-full rounded-r-full hover:bg-neutral-900 hover:bg-opacity-50"><Link href='/about'>About</Link></li>
                     <li className="px-6 py-4 m-2 rounded-l-full rounded-r-full hover:bg-neutral-900 hover:bg-opacity-50"><Link href='/projects'>Projects</Link></li>
-                    <li className="px-6 py-4 m-2 rounded-l-full rounded-r-full hover:bg-neutral-900 hover:bg-opacity-50"><Link href='/contact'>Contact</Link></li>
+                    {/* <li className="px-6 py-4 m-2 rounded-l-full rounded-r-full hover:bg-neutral-900 hover:bg-opacity-50"><Link href='/contact'>Contact</Link></li> */}
                 </ul>
 
                 <SpotifyNavbar client_id={undefined} client_secret={undefined} refresh_token={undefined} />

@@ -16,6 +16,15 @@ const SpotifyNowPlaying = (props: { client_id: any; client_secret: any; refresh_
     // const [refreshTimer, setRefresh] = useState(0);
 
     useEffect(() => {
+        Promise.all([
+                getNowPlayingItem(
+                    props.client_id,
+                    props.client_secret,
+                    props.refresh_token
+                ),
+            ]).then((results) => {
+                setResult(results[0]);
+            });
         const interval = setInterval(() => {
             Promise.all([
                 getNowPlayingItem(
@@ -34,14 +43,14 @@ const SpotifyNowPlaying = (props: { client_id: any; client_secret: any; refresh_
             return result.isPlaying ? (
                 <div className="hidden ml-auto lg:align-center lg:flex xl:inline">
                     <span className="py-1 text-neutral-500">
-                            <span><Link href={result.songUrl}>{result.title} by <i>{result.artist}</i> </Link> </span>
+                            <span><Link href={result.songUrl}>{result.title} by <i>{result.artist}</i>    </Link> </span>
                             <Spotify className="inline-flex align-text-bottom" color='#1DB954' size={20} />
                     </span>
                 </div>
             ) : (
                     <div className="hidden ml-auto lg:align-center lg:flex xl:inline">
                         <span className="py-1 text-neutral-500">
-                            <span>Not Playing Anything </span>
+                            <span>Not Playing Anything    </span>
                             <Spotify className="inline-flex align-text-bottom" color='#1DB954' size={20} />
                         </span>
                     </div>
@@ -50,7 +59,7 @@ const SpotifyNowPlaying = (props: { client_id: any; client_secret: any; refresh_
         return (
             <div className="hidden ml-auto lg:align-center lg:flex xl:inline">
                 <span className="py-1 text-neutral-500">
-                    <span>Not Playing Anything </span>
+                    <span>Not Playing Anything    </span>
                     <Spotify className="inline-flex align-text-bottom" color='#1DB954' size={20} />
                 </span>
             </div>
