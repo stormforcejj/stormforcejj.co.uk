@@ -14,29 +14,33 @@ export default function Index() {
             <h1 className='text-[50px] font-extrabold'>About</h1>
             <p className='text-lg'>Hey, I'm James. I'm 17 years old and live in Wales. I am an aspiring developer, with a passion for music and photography. I'm currently dabbling in NextJS and React (what this site is coded in). Alongside experience in the frameworks this website is made with I also have experience in Java & Python among other things. </p>
             <h2 className='my-5 text-[35px] font-extrabold'>Playlists</h2>
-            <div className="mx-10 my-3">
-                <div className="flex flex-col flex-wrap items-center gap-5 mt-5 text-lg lg:flex-row">
-                    <div className="flex p-3 m-3 rounded-md basis-1/3 justify-evenly bg-neutral-900">
-                        <Image src="https://i.scdn.co/image/ab67706c0000da8470db048900ab42fe533d8692" alt={'Lofi Cover'} width='50' height='50' className='rounded-md' />
-                        <p className='align-center'>Lofi</p>
+            <div className="mx-3 my-3">
+                <div className="flex flex-col flex-wrap items-center gap-5 mt-5 lg:flex-row">
+                    <div className="flex">
+                        <iframe className="rounded-[12px]" src="https://open.spotify.com/embed/playlist/3ANX9HHM0aySWpZJlZ5ZA9?utm_source=generator&theme=0" width="100%" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
-                    <div className="flex p-3 m-3 rounded-md basis-1/3 justify-evenly bg-neutral-900">
-                        <p>Hi</p>
+                    <div className="flex">
+                        <iframe className="rounded-[12px]" src="https://open.spotify.com/embed/playlist/69XppgozeMZvDOTNym5Uzp?utm_source=generator&theme=0" width="100%" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
-                    <div className="flex p-3 m-3 rounded-md basis-1/3 justify-evenly bg-neutral-900">
-                        <p>Hi</p>
+                    <div className="flex">
+                        <iframe className="rounded-[12px]" src="https://open.spotify.com/embed/playlist/64JX1mlBqWDNIqdtQvNA3M?utm_source=generator&theme=0" width="100%" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
-                    <div className="flex p-3 m-3 rounded-md basis-1/3 justify-evenly bg-neutral-900">
-                        <p>Hi</p>
+                    <div className="flex">
+                        <iframe className="rounded-[12px]" src="https://open.spotify.com/embed/playlist/5JhOT2EWqSXopxVPTZFArD?utm_source=generator&theme=0" width="100%" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
-                    <div className="flex p-3 m-3 rounded-md basis-1/3 justify-evenly bg-neutral-900">
-                        <p>Hi</p>
+                    <div className="flex">
+                        <iframe className="rounded-[12px]" src="https://open.spotify.com/embed/playlist/4DbEXiJhACd5WTHE8qsIXI?utm_source=generator&theme=0" width="100%" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
-                    <div className="flex p-3 m-3 rounded-md basis-1/3 justify-evenly bg-neutral-900">
-                        <p>Hi</p>
+                    <div className="flex">
+                        <iframe className="rounded-[12px]" src="https://open.spotify.com/embed/playlist/6Rc8DrjUVBxXlRmi0VxPyg?utm_source=generator&theme=0" width="100%" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
+            <div className="flex items-center justify-center my-10">
+                    <Link href={'https://open.spotify.com/user/jwcrgr6ig95alm0os9tuc9tq1?si=0cc2057d114c4ca0'}rel="noopener noreferrer" target="_blank">
+                        <span className='justify-center px-6 py-2 m-2 font-extrabold rounded-l-full rounded-r-full text-black bg-[#a2ff9a] hover:bg-[#b9ffb4]'>See More...</span>
+                    </Link>
+                </div>
         </section>
             
     </div>

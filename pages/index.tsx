@@ -15,7 +15,7 @@ export default function Index() {
         <section className='max-w-[80%] ml-auto mr-auto'>
             <div className="links"> 
                 <ul className='flex font-extrabold'>
-                    <li><Link href={'https://github.com/stormforcejj'} rel="noopener noreferrer" target="_blank"><Github className="justify-center mx-2" color='#fff' size={30} /></Link></li>
+                    <li><Link href={'https://github.com/stormforcejj'} rel="noopener noreferrer" target="_blank"><Github className="justify-center mx-2" color='#fff'  size={30} /></Link></li>
                     <li className='py-1'>
                         <Link href={'https://goo.gl/maps/Vev1nLPSzN9ztcYG8'}rel="noopener noreferrer" target="_blank">
                             <span className='justify-center px-6 py-2 m-2 font-extrabold rounded-l-full rounded-r-full text-black bg-[#a2ff9a] hover:bg-[#b9ffb4]'>Wales</span>

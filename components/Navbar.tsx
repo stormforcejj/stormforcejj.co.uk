@@ -14,7 +14,7 @@ const Navbar = () => {
                 <ul className="hidden font-bold sm:flex">
                     <li className="px-6 py-4 m-2 rounded-l-full rounded-r-full hover:bg-neutral-900 hover:bg-opacity-50"><Link href='/'>&gt;_</Link></li>
                     <li className="px-6 py-4 m-2 rounded-l-full rounded-r-full hover:bg-neutral-900 hover:bg-opacity-50"><Link href='/about'>About</Link></li>
-                    <li className="px-6 py-4 m-2 rounded-l-full rounded-r-full hover:bg-neutral-900 hover:bg-opacity-50"><Link href='/projects'>Projects</Link></li>
+                    {/* <li className="px-6 py-4 m-2 rounded-l-full rounded-r-full hover:bg-neutral-900 hover:bg-opacity-50"><Link href='/projects'>Projects</Link></li> */}
                     {/* <li className="px-6 py-4 m-2 rounded-l-full rounded-r-full hover:bg-neutral-900 hover:bg-opacity-50"><Link href='/contact'>Contact</Link></li> */}
                 </ul>
 
@@ -30,8 +30,8 @@ const Navbar = () => {
                 <ul className="text-[2rem] font-bold">
                     <li><Link href='/'>&gt;_</Link></li>
                     <li><Link href='/about'>About</Link></li>
-                    <li><Link href='/projects'>Projects</Link></li>
-                    <li><Link href='/contact'>Contact</Link></li>
+                    {/* <li><Link href='/projects'>Projects</Link></li>
+                    <li><Link href='/contact'>Contact</Link></li> */}
                 </ul>
                 </div>
 
