@@ -12,7 +12,7 @@ export default function Index() {
         </Head>
         <section className='max-w-[80%] ml-auto mr-auto'>
             <h1 className='text-[50px] font-extrabold'>About</h1>
-            <p className='text-lg'>Hey, I'm James. I'm 17 years old and live in Wales. I am an aspiring developer, with a passion for music and photography. I'm currently dabbling in NextJS and React (what this site is coded in). Alongside experience in the frameworks this website is made with I also have experience in Java & Python among other things. </p>
+            <p className='text-lg'>Hey, I'm James. I'm 18 years old and live in Wales. I am an aspiring developer, with a passion for music and photography. I'm currently dabbling in NextJS and React (what this site is coded in). Alongside experience in the frameworks this website is made with I also have experience in Java & Python among other things. </p>
             <h2 className='my-5 text-[35px] font-extrabold'>Playlists</h2>
             <div className="mx-3 my-3">
                 <div className="flex flex-col flex-wrap items-center gap-5 mt-5 lg:flex-row">
