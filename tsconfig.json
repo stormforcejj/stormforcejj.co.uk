@@ -19,6 +19,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/api/mumbleRedirect.js", "pages/api/mumbleRedirect.js"],
   "exclude": ["node_modules"]
 }
