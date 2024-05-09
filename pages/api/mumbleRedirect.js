@@ -12,9 +12,9 @@ export default function handler(req, res) {
   res.redirect(
     307,
     "mumble://" +
-      searchParams.get("username") +
+      encodeURIComponent(searchParams.get("username")) +
       ":" +
-      searchParams.get("password") +
-      "@mumble.stormforcejj.co.uk:64738/?version=1.3.0&title=Eviction%20Inc&url=mumble.stormforcejj.co.uk"
+      encodeURIComponent(searchParams.get("password")) +
+      "@mumble.stormforcejj.co.uk:64738/?version=1.3.4&title=Eviction%20In%2Ec&url=mumble.stormforcejj.co.uk"
   );
 }
