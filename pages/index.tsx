@@ -24,7 +24,7 @@ export default function Index() {
                 </ul>
             </div>
             <h1 className='text-[50px] font-extrabold pt-5'>Hi, I'm James 👋</h1>
-            <p className='text-lg'>Hey, I'm James. I'm 18 years old and live in Wales. I am an aspiring developer, with a passion for music and photography. I'm currently dabbling in NextJS and React (what this site is coded in). Alongside experience in the frameworks this website is made with I also have experience in Java & Python among other things. </p>
+            <p className='text-lg'>Hey, I'm James. I'm 19 years old and live in Wales. I am an aspiring developer, with a passion for music and photography. I'm currently dabbling in NextJS and React (what this site is coded in). Alongside experience in the frameworks this website is made with I also have experience in Java & Python among other things. </p>
             {/* <h2 className='text-[27px] font-extrabold pt-5'>What am I doing at the moment?</h2>
             <p className='text-lg'></p> */}
             <h2 className='text-[27px] font-extrabold pt-5'>Technologies</h2>
@@ -66,7 +66,7 @@ export default function Index() {
                 <hr className='border-neutral-900' />
                 <div className="">
                     <h2 className='text-[35px] font-extrabold pt-5'>James</h2>
-                    <p className='text-[20px]'>stormforcejj.co.uk • 2023</p>
+                    <p className='text-[20px]'>stormforcejj.co.uk • 2024</p>
                 </div>
             </div>
         </section>
