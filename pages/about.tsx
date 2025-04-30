@@ -13,10 +13,10 @@ export default function Index() {
         <section className='max-w-[80%] ml-auto mr-auto'>
             <h1 className='text-[50px] font-extrabold'>About</h1>
             <p className='text-lg'>Hey, I'm James. I'm a Computer Science student from
-                <a className='pl-1'href="https://www.google.com/maps/place/North+Wales/" target="_blank">
+                <a className='pl-1'href="https://www.google.com/maps/place/North+Wales/" target="_blank" rel="noopener noreferrer">
                     🏴󠁧󠁢󠁷󠁬󠁳󠁿
                 </a> <b>North Wales</b>, currently studying at the 
-                <a className='pl-1' href="https://warwick.ac.uk" target="_blank">
+                <a className='pl-1' href="https://warwick.ac.uk" target="_blank" rel="noopener noreferrer">
                     <img className='inline' src="https://raw.githubusercontent.com/stormforcejj/stormforcejj/main/warwick circle.png" width="20"/>
                 </a> <b>University of Warwick</b></p>
             <h2 className='my-5 text-[35px] font-extrabold'>Playlists</h2>

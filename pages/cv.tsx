@@ -115,7 +115,7 @@ student and creating options forms for GCSE and A Level. Gained additional skill
 
 <hr className='border-neutral-900 my-7' />
 
-            <p><b>Personal Website (This Site)</b> <i><a href='/home' target="_blank" className='text-blue-500'>stormforcejj.co.uk</a></i>, (Java & SQLite)</p>
+            <p><b>Personal Website (This Site)</b> <i><a href='/home' target="_blank" rel="noopener noreferrer" className='text-blue-500'>stormforcejj.co.uk</a></i>, (Java & SQLite)</p>
             <ul className='px-6 list-disc'><li>A personal portfolio website built using NextJS. Experiences gained include CI/CD and Linux server hosting.</li></ul>
 
             <h2 className='text-[27px] font-extrabold pt-5'>Interests</h2>
