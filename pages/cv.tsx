@@ -132,7 +132,7 @@ student and creating options forms for GCSE and A Level. Gained additional skill
                 <hr className='border-neutral-900' />
                 <div className="">
                     <h2 className='text-[35px] font-extrabold pt-5'>James</h2>
-                    <p className='text-[20px]'>stormforcejj.co.uk • 2025</p>
+                    <p className='text-[20px]'>stormforcejj.co.uk • 2025 • 5639574</p>
                 </div>
             </div>
     </div>
